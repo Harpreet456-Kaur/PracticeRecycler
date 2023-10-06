@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/employeeList">
+
+    <fragment
+        android:id="@+id/employeeList"
+        android:name="com.example.practicerecycler.EmployeeList"
+        android:label="fragment_employee_list"
+        tools:layout="@layout/fragment_employee_list" >
+        <action
+            android:id="@+id/action_employeeList_to_addDetails"
+            app:destination="@id/addDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDetails"
+        android:name="com.example.practicerecycler.AddDetails"
+        android:label="fragment_add_details"
+        tools:layout="@layout/fragment_add_details" >
+        <action
+            android:id="@+id/action_addDetails_to_employeeList"
+            app:destination="@id/employeeList" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewScreen"
+        android:name="com.example.practicerecycler.VolumeBotton.ViewScreen"
+        android:label="fragment_view_screen"
+        tools:layout="@layout/fragment_view_screen" />
+</navigation>

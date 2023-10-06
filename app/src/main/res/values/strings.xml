@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PracticeRecycler</string>
+    <string name="name">name</string>
+    <string name="age">age</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ADD">ADD</string>
+    <string name="DELETE">DELETE</string>
+    <string name="value">0</string>
+    <string name="viewScreen">viewScreen</string>
+    <string name="accessibility_service_description">description</string>
+</resources>
